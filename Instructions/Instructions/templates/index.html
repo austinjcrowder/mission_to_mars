@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Costa Rica Weather</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Visit the...</h1>
+      <p>mars bars </p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape_mars" role="button">Get Data!</a></p>
+    </div>
+    <img src="{{image_url}}" alt="Sloth">
+    <h2>Whats happening on mars</h2>
+    <h3>News Title: {{ mars_app.news_title }}</h3>
+    <h3>News Paragraph: {{ mars_app.news_p }}</h3>
+    <h3>Here is the current weather on mars!: {{mars_app.mars_weather}}</h3>
+    <!--<h3><img src={{mars_app.image_url}} alt="Nice mars picture"</h3>-->
+    <h3>Want some lovely Mars facts? They're right here: {{mars_app.facts_df}}</h3>
+  </div>
+  </div>
+</body>
+
+</html>
